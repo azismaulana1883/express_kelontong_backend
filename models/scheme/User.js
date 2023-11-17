@@ -8,6 +8,8 @@ var Schema = new Mongoose.Schema({
     alamat: { type: String,required:true },
     isVerified: {type:Boolean, default: false},
     verificationToken: {type:String},
+    resetPasswordToken: { type: String },
+    resetPasswordExpires: { type: Date },
     role: {type: String,required:true}
 })
 
