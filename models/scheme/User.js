@@ -6,6 +6,8 @@ var Schema = new Mongoose.Schema({
     email: { type: String,required:true },
     phone_number: { type: String,required:true },
     alamat: { type: String,required:true },
+    isVerified: {type:Boolean, default: false},
+    verificationToken: {type:String},
     role: {type: String,required:true}
 })
 
